@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <main class="bubble">
+        <h1 class="title">BATALLA</h1>
+        <div class="section-1" id="listarpokemon">
+            <div class="card" id="card-1">
+                <div class="card-profile" id="card-profile-1"><!-- profile -->
+                    <div class="image" id="img-pok-1">                        
+                        <img alt="Pokemon 1">
+                        <div class="circle-1"></div>
+                        <div class="circle-2"></div>
+                    </div>
+                    
+                    <div class="name"></div>
+                    <div class="exp"></div><!-- job -->
+                    
+                </div>
+                
+                <div class="stats" id="stats-1">
+                    <div class="box">
+                        <span class="value"></span>
+                        <span class="parameter">Ataque</span>
+                    </div>
+                    <div class="box">
+                        <span class="value"></span>
+                        <span class="parameter">Ataque Especial</span>
+                    </div>
+                    <div class="box">
+                        <span class="value"></span>
+                        <span class="parameter">Defensa</span>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="middle">
+                <button type="submit" class="btn" onclick="btnSeleccionar()">
+                    Seleccionar
+                </button>
+                <div class="versus">
+                    VS
+                </div>
+            </div>
+            
+            
+            
+            <div class="card" id="card-2">
+                <div class="card-profile" id="card-profile-2"><!-- profile -->
+                    <div class="image" id="img-pok-2">
+                        <img alt="Pokemon 2">
+                        <div class="circle-1"></div>
+                        <div class="circle-2"></div>
+                    </div>
+                    
+                    <div class="name"></div>
+                    <div class="exp"></div><!-- job -->
+                    
+                </div>
+                
+                <div class="stats" id="stats-2">
+                    <div class="box">
+                        <span class="value"></span>
+                        <span class="parameter">Ataque</span>
+                    </div>
+                    <div class="box">
+                        <span class="value"></span>
+                        <span class="parameter">Ataque Especial</span>
+                    </div>
+                    <div class="box">
+                        <span class="value"></span>
+                        <span class="parameter">Defensa</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    
+
+    
+    <script src="./script/main.js"></script>
+</body>
+</html>
