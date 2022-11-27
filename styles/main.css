@@ -27,7 +27,8 @@ main{
     background-color: #de5239;
     height: 85%;
 }
-.title{
+.title,
+.subtitle{
     color: #F5E8DF;
 }
 .section-1{
@@ -146,6 +147,9 @@ main{
 .middle {
     font-weight: 600;
 }
+.section-1{    
+    margin-bottom: 100px;
+}
 .section-1 .btn{
     font-size: 16px;
     cursor: pointer;
@@ -154,7 +158,6 @@ main{
     border-radius: 10px;
     color: #ffffff;
     border: none;    
-    margin-bottom: 30px;
     font-weight: 600;
 }
 .section-1 .btn:hover{
@@ -162,11 +165,41 @@ main{
     box-shadow: 2px 2px 10px var(--gray);
     color: var(--gray);
 }
+thead{
+    border-bottom: 5px solid var(--brown);
+}
+.table{
+    margin: 30px auto;
+    width: 900px;
+    padding: 20px;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+tr{
+    line-height: 35px;
+}
+th{
+    width: 33.3%;
+}
+th, td {
+    width: 25%;
+    text-align:center;
+ }
+ tbody tr:nth-child(even) {
+    background: #d3a85d8f;
+}
 
 
 @media only screen and (max-width: 812px) {
     .section-1{
         flex-direction: column;
         gap: 38px;
+    }
+    .table{
+        width: 400px;
+        padding: 5px;
+    }
+    .subtitle{
+        color: var(--brown);
     }
 }
